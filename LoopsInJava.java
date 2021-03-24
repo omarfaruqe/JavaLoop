@@ -94,4 +94,12 @@ public class LoopsInJava{
 	}
 
 
+	public void raiseAlarm(int numberOfWarnings){
+		int count = 1;
+		while(count <= numberOfWarnings){
+			System.out.println("Warning");
+			count = count + 1;
+		}	
+	}
+
 }
