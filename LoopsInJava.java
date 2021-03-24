@@ -33,4 +33,21 @@ public class LoopsInJava{
 		}
 		// ....		
 	}
+
+	public void alarm(){
+		boolean on = checkAlarm();
+		while(on){
+			beep();
+			on = checkAlarm();
+		}
+	}
+
+	public void rainingStatus(){
+		while(isRaining){
+	   		System.out.println("It's still raining outside!");
+	   		isRaining = checkWeather();
+		}
+		System.out.println("Now it's not raining anymore");		
+	}
+
 }
