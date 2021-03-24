@@ -116,4 +116,18 @@ public class LoopsInJava{
 		}
 		return totalBlocks;
 	}
+
+	/**
+	 * adds the numbers 15 + 16 + ...... + 20
+	 * @return the total sum
+	 */
+	public int addNumbers(){
+		int sum = 0;
+		for(int startingNumber = 15; startingNumber <= 20; startingNumber++){
+			sum = sum + startingNumber;
+		}
+		return sum;
+	}
+
+	
 }
