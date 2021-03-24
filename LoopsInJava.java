@@ -129,5 +129,13 @@ public class LoopsInJava{
 		return sum;
 	}
 
-	
+	public void countingDown(){
+		for(int count = 1; count <= 5; count++){
+			System.out.println(count);
+		}
+
+		for(int count = 5; count >= 0; count--){
+			System.out.println(count);
+		}
+	}
 }
