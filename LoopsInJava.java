@@ -172,4 +172,32 @@ public class LoopsInJava{
 			return false;
 		}
 	}
+
+
+	public int martingale(){
+		int money = 1000;
+		int target = 1200;
+		int bet = 10;
+		while(money > bet){
+			boolean win = play();
+			if(win){
+				money = money + bet;
+				bet = 10;
+			}else{
+				money = money - bet;
+				bet = bet * 2;
+			}
+			if(money >= target){
+				break;
+			}
+		}
+		return money;
+	}
+	public boolean play(){
+		if((int) Math.random() * 5 == 0){
+			return true;
+		}else{
+			return false;
+		}
+	}
 }
