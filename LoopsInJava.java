@@ -102,4 +102,10 @@ public class LoopsInJava{
 		}	
 	}
 
+	public void raiseAlarm(int numberOfWarnings){
+		for(int count = 1; count <= numberOfWarnings; count = count + 1){
+			System.out.println("Warning");
+		}	
+	}
+
 }
