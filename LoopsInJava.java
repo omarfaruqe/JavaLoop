@@ -108,4 +108,12 @@ public class LoopsInJava{
 		}	
 	}
 
+
+	public int countBlocks(int levels){
+		int totalBlocks = 0;
+		for(int count = 1; count <= levels; count++){
+			totalBlocks = totalBlocks + totalBlocks * totalBlocks;
+		}
+		return totalBlocks;
+	}
 }
