@@ -138,4 +138,38 @@ public class LoopsInJava{
 			System.out.println(count);
 		}
 	}
+
+	/**
+	 * Wifi Search
+	 */
+	public void searchWifi(){
+		for(int count = 1; count <=10; count++){
+			boolean wifiAvailable = checkWifi();
+			if(wifiAvailable){
+				System.out.println("Wifi found");
+				break;
+			}
+		}
+	}
+
+
+	/**
+	 * Rolls a dice till you get a 6 then you win 
+	 * but if you get a 3 you lose
+	 * @return true if you win, false otherwise
+	 */
+	public boolean rollASix(){
+		int dice = rollDice();
+		while(dice != 6){
+			dice = rollDice();
+			if(dice == 3){
+				break;
+			}
+		}
+		if(dice == 6){
+			return true;
+		}else{
+			return false;
+		}
+	}
 }
