@@ -253,7 +253,7 @@ public class LoopsInJava{
 		}
 		return min;
 	}
-	
+
 	/*
 	You should implement the function String findLongestName(String [] names) 
 	which takes an array of Strings as an input containing a list of names, 
@@ -271,4 +271,15 @@ public class LoopsInJava{
 
 	Finally, return the longestName variable as the return value of the function 
 	*/
+
+	public String findLongestName(String names[]){
+		int size = names.length;
+		String longestName = names[0];
+		for(int count = 1; count < size; count++){
+			if(names[count].length() > longestName.length()){
+				longestName = names[count];
+			}
+		}
+		return longestName;
+	}
 }
