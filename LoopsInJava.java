@@ -200,4 +200,10 @@ public class LoopsInJava{
 			return false;
 		}
 	}
+
+	public static void main(String[] args) {
+		double fractionNumbers[] = {4.0, 6.3, 3.75, 5.1, 9.99};
+		double sum = fractionNumbers[0] + fractionNumbers[3];
+		System.out.println(sum);
+	}
 }
