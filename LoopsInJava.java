@@ -205,5 +205,15 @@ public class LoopsInJava{
 		double fractionNumbers[] = {4.0, 6.3, 3.75, 5.1, 9.99};
 		double sum = fractionNumbers[0] + fractionNumbers[3];
 		System.out.println(sum);
+
+		String newsOutlet[] = {"abc", "bbc", "CNN", "CBS", "AP", "NBC", "FOX", "npr", "Sky", "Aljazeera"};
+		System.out.println(newsOutlet[2]);
+
+		double lucky = Math.random();
+		//Multiply by 10 to get a fractional number between 0 - 10
+		lucky = lucky * 10;
+		//cast to integer
+		int luckyIndex = (int)lucky;
+		System.out.println(newsOutlet[luckyIndex]);
 	}
 }
