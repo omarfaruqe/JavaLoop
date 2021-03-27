@@ -222,6 +222,11 @@ public class LoopsInJava{
 		}
 	}
 
+	/**
+	 * 
+	 * @param temparatures
+	 * @return
+	 */
 	public double calculateAverate(double temparatures[]){
 		int size = temparatures.length;
 		double total = 0;
@@ -230,5 +235,22 @@ public class LoopsInJava{
 		}
 		double average = total / size;
 		return average;
+	}
+
+	/**
+	 * Searches an array of speed
+	 * for the fastest (smallest) value.
+	 * @param speed array of speeds 
+	 * @return double the fastest speed found
+	 */
+	public double searchMinimum(double speed[]){
+		int size = speed.length;
+		double min = speed[0];
+		for(int count = 1; count < size; count++){
+			if(speed[count] < min){
+				min = speed[count];				
+			}
+		}
+		return min;
 	}
 }
