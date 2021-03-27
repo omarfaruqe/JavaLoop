@@ -178,7 +178,7 @@ public class LoopsInJava{
 		int money = 1000;
 		int target = 1200;
 		int bet = 10;
-		while(money > bet){
+		while(money > bet){    //while (money>bet && money<target)
 			boolean win = play();
 			if(win){
 				money = money + bet;
