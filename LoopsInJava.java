@@ -216,4 +216,14 @@ public class LoopsInJava{
 		int luckyIndex = (int)lucky;
 		System.out.println(newsOutlet[luckyIndex]);
 	}
+
+	public double calculateAverate(double temparatures[]){
+		int size = temparatures.length;
+		double total = 0;
+		for(int count = 0; count < size; count++){
+			total = total + temparatures[count];
+		}
+		double average = total / size;
+		return average;
+	}
 }
