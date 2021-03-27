@@ -215,6 +215,11 @@ public class LoopsInJava{
 		//cast to integer
 		int luckyIndex = (int)lucky;
 		System.out.println(newsOutlet[luckyIndex]);
+
+		System.out.println(newsOutlet[20]); // will throw an ArrayIndexOutOfBoundsException
+		if(20 < newsOutlet.length){
+			System.out.println(newsOutlet[20]);
+		}
 	}
 
 	public double calculateAverate(double temparatures[]){
