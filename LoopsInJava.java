@@ -318,7 +318,7 @@ public class LoopsInJava{
 	}
 
 	//Nested loops
-	public void nestedLoopDemo(int grades[][]){
+	public double nestedLoopDemo(int grades[][]){
 		for(int row = 0; row < 3; row++){
 			for(int column = 0; column < 4; column++){
 				System.out.println("Hi!");
@@ -333,5 +333,7 @@ public class LoopsInJava{
 				total = total + grades[row][column];
 			}
 		}
+		double average = total / (double)(rows + columns);
+		return average;
 	}
 }
