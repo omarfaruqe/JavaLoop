@@ -282,4 +282,18 @@ public class LoopsInJava{
 		}
 		return longestName;
 	}
+
+	/**
+	 * This method will average marks of any specific subject
+	 * @param grades 2D grades array containing marks for couple of sujects of some students
+	 * @return average of any subject's marks
+	 */
+	public double subjectAverage(int grades[][]){
+		int total = 0;
+		for(int column = 0; column < 5; column++){
+			total = total + grades[1][column];
+		}
+		double average = total / 5.0;
+		return average;
+	}	
 }
