@@ -306,4 +306,14 @@ public class LoopsInJava{
 		double average = total / (double)subjects;
 		return average;
 	}
+	
+	public double studentAverage(int grades[][], int student){
+		int subjects = grades.length;
+		int total = 0;
+		for(int row = 0; row <subjects; row++){
+			total = total + grades[row][student];
+		}
+		double average = total / (double)subjects;
+		return average;
+	}
 }
