@@ -316,4 +316,22 @@ public class LoopsInJava{
 		double average = total / (double)subjects;
 		return average;
 	}
+
+	//Nested loops
+	public void nestedLoopDemo(int grades[][]){
+		for(int row = 0; row < 3; row++){
+			for(int column = 0; column < 4; column++){
+				System.out.println("Hi!");
+			}
+		}
+
+		int total = 0;
+		int rows = grades.length;
+		int columns = grades[0].length;
+		for(int row = 0; row < rows; row++){
+			for(int column = 0; columns < 4; column++){
+				total = total + grades[row][column];
+			}
+		}
+	}
 }
